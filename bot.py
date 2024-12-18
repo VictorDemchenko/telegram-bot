@@ -63,7 +63,6 @@ async def calculate_matrix(update: Update, context: ContextTypes.DEFAULT_TYPE):
             result += f"{block}: {value}\n"
 
         result += f"\n🔮 Число судьбы: {destiny_number}\n\n"
-        result += "Внешний квадрат:\n"
         result += f"Темперамент: {temperament}\n"
         result += f"Цель: {goal}\n"
         result += f"Семья: {family}\n"
