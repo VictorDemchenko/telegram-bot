@@ -58,7 +58,7 @@ async def calculate_matrix(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         # Формирование результата
         result = f"Дата рождения: {date_of_birth}\n\n"
-        result += "Ваша матрица судьбы:\n"
+        result += "Ваша психоматрица:\n"
         for block, value in blocks.items():
             result += f"{block}: {value}\n"
 
@@ -79,7 +79,7 @@ async def calculate_matrix(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Функция для команды /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Привет! Я бот для расчета матрицы судьбы по Пифагору.\n"
+        "Привет! Я бот для расчета психоматрицы по Пифагору.\n"
         "Введите вашу дату рождения в формате ДД.ММ.ГГГГ, и я покажу вашу матрицу!"
     )
 
